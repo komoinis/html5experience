@@ -1,0 +1,13 @@
+1. Erstelle eine simple Projektstruktur
+Siehe http://requirejs.org/docs/optimization.html
+Das "appdirectory" wird hier als "h5e" bennant, ganz kurz für html5experience.
+
+h5e
+	main.html
+	css
+		common.css
+		main.css
+	scripts
+		require.js
+		main.js		
+r.js (The r.js optimizer from download page)
