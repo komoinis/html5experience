@@ -9,12 +9,17 @@ define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub"], function($, nouns, pu
 
 	function publishDocumentEvents() {		
 			$(window).bind(documentEvents, function(event){
+				$.publish("/event", [event]);
 				$.publish("/event/document", [event]);
+				$.publish("/event/document" + event.type, [event]);
 			});
 	}
 	function subscribeDocumentEvents() {
 		$.subscribe("/event/document", function(event) {			
-			append("/event/document:" + event.type);
+			append("Document Event: " + event.type);
+		});
+		$.subscribe("/event/document/error", function(event) {			
+			$.publish("/error/document", [event]);
 		});
 	}
 	function append(item) {
