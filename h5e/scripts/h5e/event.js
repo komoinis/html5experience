@@ -5,6 +5,9 @@ define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub"], function($, nouns, pu
 
 	function layout(){
 		$("<h2>" + nouns.root.event + "</h2><ul/>").appendTo($("#event"));
+		$("#event").click(function(){
+			$("#event ul").toggle('slow', 'swing');
+		});
 	}
 
 	function publishDocumentEvents() {		
@@ -16,7 +19,7 @@ define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub"], function($, nouns, pu
 	}
 	function subscribeDocumentEvents() {
 		$.subscribe("/event/document", function(event) {			
-			append("Document Event: " + event.type);
+			append("window : " + event.type);
 		});
 		$.subscribe("/event/document/error", function(event) {			
 			$.publish("/error/document", [event]);
