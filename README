@@ -40,3 +40,12 @@ Siehe http://code.google.com/p/jsonschema/
 Die B-Versionen scheinen laut Testdatei nicht zu funktionieren, daher die ältere "jsonschema.js".
 Die Datei "schema" ist das "Schema für JSON Schema".
 
+
+
+
+4. Pub/Sub Unterstützung
+Siehe http://weblog.bocoup.com/publishsubscribe-with-jquery-custom-events
+
+Simpelstes Framework für Publish-Subscribe. Kann/Soll für eigene Zwecke angepasst werden (z.B. differenziertere Topicauswahl).
+Soll laut Blog um Faktor 10x schneller sein als JQuery Events. 
+Das Script "has.js" ist eine Empfehlung des PubSub-Team, der Einsatz im Projekt ist noch fraglich.
