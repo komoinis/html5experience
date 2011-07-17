@@ -10,9 +10,9 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	// function); all other defined modules work the
 	// same way: the callback is invoked once and
 	// the returned value is cached by RequireJS
-	var app = {
+	var _app = {
 		onReady: function () {
-			//alert("hello");
+			//alert("hello " + nouns.root.event_pl);
 		}
 	};
 
@@ -37,11 +37,11 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	// loads either Client or Server class for Db and
 	// Conduit depending upon if we are on the
 	// client or server
-	require(['h5e/status'], function (status) {
+	require(['h5e/event'], function (event) {
 		// app has loaded, fire anything that has
 		// connected to app.onReady!
-		app.onReady();
+		_app.onReady();
 	});
 	
-	return app;
+	return _app;
 });

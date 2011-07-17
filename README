@@ -56,5 +56,8 @@ Siehe http://requirejs.org/docs/api.html#funcmodule
 Siehe http://www.resthub.org/refdoc/javascript/internationalization.html
 Nicht so einfach zu verstehen. Der erste Link bringt etwas Licht ins Dunkel und wie der Mechanismus überhaupt angewandt wird.
 
+
+6. Eigenes Event Plugin
+Das Event Plugin leitet alle möglichen Arten von äusseren Events in das PubSub-Framework um
 TODO: 99 Cache Manifest zufügen
 ...
