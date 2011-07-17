@@ -32,6 +32,7 @@ node -v
 curl http://npmjs.org/install.sh | sudo sh
 npm -v
 
+Zur Steuerung des Bauens ist die Datei "app.build.js" verantwortlich.
 
 
 3. JSON Schema Unterstützung 
