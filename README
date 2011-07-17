@@ -33,3 +33,10 @@ curl http://npmjs.org/install.sh | sudo sh
 npm -v
 
 
+
+3. JSON Schema Unterstützung 
+Siehe http://code.google.com/p/jsonschema/
+
+Die B-Versionen scheinen laut Testdatei nicht zu funktionieren, daher die ältere "jsonschema.js".
+Die Datei "schema" ist das "Schema für JSON Schema".
+
