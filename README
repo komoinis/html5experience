@@ -52,5 +52,7 @@ Soll laut Blog um Faktor 10x schneller sein als JQuery Events.
 Das Script "has.js" ist eine Empfehlung des PubSub-Team, der Einsatz im Projekt ist noch fraglich.
 
 
+5. I18N TODO: Beschreibung
+
 TODO: 99 Cache Manifest zufügen
 ...
