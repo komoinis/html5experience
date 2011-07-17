@@ -1,2 +1,5 @@
-require(["one", "two"], function (one, two) {
+require(["jquery"], function($) {
+    $(function() {
+   	alert("JQuery loaded"); 
+   });
 });
