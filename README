@@ -53,6 +53,9 @@ Das Script "has.js" ist eine Empfehlung des PubSub-Team, der Einsatz im Projekt 
 
 
 5. I18N TODO: Beschreibung
+Siehe http://zetafleet.com/blog/unified-codebases-with-dojo-node-and-requirejs-the-holy-grail-of-dry
+Siehe http://requirejs.org/docs/api.html#funcmodule
+Nicht so einfach zu verstehen. Der erste Link bringt etwas Licht ins Dunkel und wie der Mechanismus überhaupt angewandt wird.
 
 TODO: 99 Cache Manifest zufügen
 ...

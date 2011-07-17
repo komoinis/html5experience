@@ -1,7 +1,7 @@
 define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	
-	var isBrowser = true; // TODO: setze sinnvolle vorkonditionen
-	mode = isBrowser ? 'Client' : 'Server',
+	var isBrowser = true; // TODO: setze sinnvolle Vorbedingungen
+	var mode = isBrowser ? 'Client' : 'Server';
 
     // Danke für http://zetafleet.com/blog/unified-codebases-with-dojo-node-and-requirejs-the-holy-grail-of-dry
 	// our main application object; anything else that
@@ -10,7 +10,7 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	// function); all other defined modules work the
 	// same way: the callback is invoked once and
 	// the returned value is cached by RequireJS
-	app = {
+	var app = {
 		onReady: function () {
 			alert("hello");
 		}
