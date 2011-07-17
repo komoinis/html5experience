@@ -12,7 +12,7 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	// the returned value is cached by RequireJS
 	var app = {
 		onReady: function () {
-			alert("hello");
+			//alert("hello");
 		}
 	};
 
@@ -34,7 +34,14 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 		// connected to app.onReady!
 		app.onReady();
 	});*/
-	app.onReady();
+	// loads either Client or Server class for Db and
+	// Conduit depending upon if we are on the
+	// client or server
+	require(['h5e/status'], function (status) {
+		// app has loaded, fire anything that has
+		// connected to app.onReady!
+		app.onReady();
+	});
 	
 	return app;
 });

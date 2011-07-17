@@ -1,5 +1,6 @@
 @import url("common.css");
+@import url("status/status.css");
 
 .app {
-    background: transparent url(../../img/app.png);
+    /*background: transparent url(../../img/app.png);*/
 }

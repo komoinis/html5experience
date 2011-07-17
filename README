@@ -42,8 +42,6 @@ Die B-Versionen scheinen laut Testdatei nicht zu funktionieren, daher die älter
 Die Datei "schema" ist das "Schema für JSON Schema".
 
 
-
-
 4. Pub/Sub Unterstützung
 Siehe http://weblog.bocoup.com/publishsubscribe-with-jquery-custom-events
 
@@ -55,6 +53,7 @@ Das Script "has.js" ist eine Empfehlung des PubSub-Team, der Einsatz im Projekt 
 5. I18N TODO: Beschreibung
 Siehe http://zetafleet.com/blog/unified-codebases-with-dojo-node-and-requirejs-the-holy-grail-of-dry
 Siehe http://requirejs.org/docs/api.html#funcmodule
+Siehe http://www.resthub.org/refdoc/javascript/internationalization.html
 Nicht so einfach zu verstehen. Der erste Link bringt etwas Licht ins Dunkel und wie der Mechanismus überhaupt angewandt wird.
 
 TODO: 99 Cache Manifest zufügen
