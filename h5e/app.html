@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>H5E</title>
-        <link rel="stylesheet" type="text/css" href="css/app.css">
-        <script data-main="scripts/app" src="scripts/require.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <h1>H5E - HTML5 Experience</h1>
-        <div id="event"/>
-    </body>
+	<head>
+		<title>H5E</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<script data-main="scripts/app" src="scripts/require.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>H5E - HTML5 Experience</h1>
+		<div id="event"></div>
+		<div class="none"/>
+		<div id="locale"></div>
+		<script id="locale_template" type="text/x-jquery-tmpl">				
+				<h2>${language_settings_label}</h2><ul><li class="language">${browser_language}</li></ul>
+		</script>
+	</body>
 </html>
