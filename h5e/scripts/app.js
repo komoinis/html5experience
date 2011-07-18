@@ -37,7 +37,7 @@ define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	// loads either Client or Server class for Db and
 	// Conduit depending upon if we are on the
 	// client or server
-	require(['h5e/event', 'h5e/locale'], function (event, locale) {
+	require(['event/main', 'locale/main'], function (event, locale) {
 		// app has loaded, fire anything that has
 		// connected to app.onReady!
 		_app.onReady();

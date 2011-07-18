@@ -1,22 +1,29 @@
-define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl"], function($, nouns, pubsub, tmpl) {
+define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl", "jquery-ui.custom.min"], function($, nouns, pubsub, tmpl) {
 
 	/* --- private variables --- */
 
-	var i18n = [nouns];
+	var i18nMaster = ["std_dict/nls/nouns"];
+	var languageMaster = "std_dict/nls/language";
 	var templateID = "locale_template";
 	var defaultTemplateMarkup = '<h2>${language_settings_label}</h2>' +
 	'<ul><li class="language">${browser_language}</li></ul>';
 
 	/* ---- private functions ---- */
-	function getBrowserLanguage(){
+	function getBrowserLanguage() {
 		return navigator.language? navigator.language : navigator.userLanguage || "";
 	}
-	
-	function getAvailableLanguages(){
+
+	function getAvailableLanguages() {
 		var languages = new Array();
-		
+		for(var m in i18nMaster) {
+				require([i18nMaster[m]], function (i18n) {
+					var i = i18n;
+					//alert(i18n);
+					//console.log("moooo " + i18n);
+				});
+		}
 	}
-	
+
 	function render() {
 		var data = {
 			'language_settings_label': nouns.root.language_setting_pl,
@@ -33,8 +40,9 @@ define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl"], functi
 	}
 
 	function setup() {
+		getAvailableLanguages();
 		// std_dict/nls/nouns
-			$.template(templateID, defaultTemplateMarkup);
+		$.template(templateID, defaultTemplateMarkup);
 	}
 
 	/* --- module object --- */
