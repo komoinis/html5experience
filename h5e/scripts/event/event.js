@@ -1,4 +1,4 @@
-define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl", "jquery-ui.custom.min"], function($, nouns, pubsub) {
+define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, nouns, pubsub) {
 
 	/* --- private --- */
 	var documentEvents = "afterprint beforeonload error haschange message offline online pagehide pageshow popstate undo redo resize storage unload";

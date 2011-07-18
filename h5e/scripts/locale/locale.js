@@ -1,4 +1,4 @@
-define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl", "jquery-ui.custom.min"], function($, nouns, pubsub, tmpl) {
+define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, nouns, pubsub, tmpl) {
 
 	/* --- private variables --- */
 
@@ -17,9 +17,9 @@ define(["jquery", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery.tmpl", "jquery
 		var languages = new Array();
 		for(var m in i18nMaster) {
 				require([i18nMaster[m]], function (i18n) {
-					var i = i18n;
-					//alert(i18n);
-					//console.log("moooo " + i18n);
+				//	for(var l in i18n){
+				//		alert(l);
+				//	}
 				});
 		}
 	}
