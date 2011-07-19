@@ -1,7 +1,7 @@
-define(["jquery", "i18n!stddict/nls/nouns"], function($) {
+define(["jquery", "i18n!std_dict/nls/nouns"], function($) {
 
 	/* --- private variables --- */
-	var masters = ["stddict/nls/nouns"]; // TODO: use from app
+	var masters = ["std_dict/nls/nouns"]; // TODO: use from app
 
 	/* ---- private functions ---- */
 	function getBrowserLanguage() {

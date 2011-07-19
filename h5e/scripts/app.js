@@ -1,4 +1,4 @@
-define(["jquery","i18n!stddict/nls/nouns"], function($, nouns) {
+define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
 	
 	var isBrowser = true; // TODO: setze sinnvolle Vorbedingungen
 	var mode = isBrowser ? 'Client' : 'Server';
