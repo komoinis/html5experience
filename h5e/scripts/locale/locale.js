@@ -19,11 +19,6 @@ define(["jquery", "jq.pubsub", "i18n!std_dict/nls/nouns"], function($) {
 				}
 			});
 		}
-
-		require(["i18n!std_dict/nls/nouns"], function (i18n) {
-			var i = i18n;
-			alert(i);
-		});
 		return availableLanguages;
 	}
 
