@@ -43,7 +43,7 @@ define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq/jquery.tmpl", 
 		}
 	};
 
-	localeUI.onReady();
+	setTimeout(localeUI.onReady, 100);
 
 	return localeUI;
 });
