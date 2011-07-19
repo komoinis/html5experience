@@ -1,17 +1,17 @@
-define(["jquery", "jq.pubsub", "i18n!std_dict/nls/nouns"], function($) {
+define(["jquery", "i18n!stddict/nls/nouns"], function($) {
 
 	/* --- private variables --- */
-	var masters = ["std_dict/nls/nouns"]; // TODO: use from app
-	
+	var masters = ["stddict/nls/nouns"]; // TODO: use from app
+
 	/* ---- private functions ---- */
 	function getBrowserLanguage() {
 		return navigator.language? navigator.language : navigator.userLanguage || "";
 	}
 
 	function getAvailableLanguages() {
-		
+
 		var availableLanguages = new Array();
-		
+
 		for(var master in masters) {
 			require([masters[master]], function (languages) {
 				for(var language in languages) {
@@ -27,6 +27,7 @@ define(["jquery", "jq.pubsub", "i18n!std_dict/nls/nouns"], function($) {
 		/* --- public functions and variables--- */
 		'onReady': function () {
 			// keep just functional TODO: publish/log if needed
+			// TODO log or alert("l on ready");
 		},
 		'getAvailableLanguages' : getAvailableLanguages,
 		'getBrowserLanguage' : getBrowserLanguage

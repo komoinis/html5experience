@@ -1,4 +1,4 @@
-define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq.pubsub", "jquery/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns) {
+define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns) {
 
 	/* --- private variables --- */
 	var nouns = initialNouns;
