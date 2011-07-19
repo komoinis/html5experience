@@ -1,23 +1,18 @@
-define(["jquery","i18n!std_dict/nls/nouns"], function($, nouns) {
-	
-	var isBrowser = true; // TODO: setze sinnvolle Vorbedingungen
-	var mode = isBrowser ? 'Client' : 'Server';
+define(["jquery", "i18n!std_dict/nls/nouns"], function($, nouns) {
 
-	var _app = {
-		onReady: function () {
-			// TODO log or alert("app on ready");
-			//alert("hello " + nouns.root.event_pl);
-		}
+	var isBrowser = true; // TODO: setze sinnvolle Vorbedingungen bzw lade aus datei/script und überschreibe defaults
+
+	function onReady() {
+		// TODO log or alert("app on ready");
 	};
 
-	// loads either Client or Server class for Db and
-	// Conduit depending upon if we are on the
-	// client or server
+	var app = {
+		'onReady': onReady
+	};
+
 	require(['locale/locale-ui'], function (event, locale) {
-		// app has loaded, fire anything that has
-		// connected to app.onReady!
-		_app.onReady();
+		app.onReady();
 	});
 	
-	return _app;
+	return app;
 });

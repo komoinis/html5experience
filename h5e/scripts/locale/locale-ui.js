@@ -12,38 +12,39 @@ define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq/jquery.tmpl", 
 	+'{{/each}}'
 	+ '</ul>';
 
-	/* ---- private functions ---- */
-
 	function render() {
-		var data = {
-			'language_settings_label': nouns.root.language_setting_pl,
-			'browser_language' : locale.getBrowserLanguage(),
-			'available_languages' : locale.getAvailableLanguages()
-		};
 		var $locale = $("#locale");
 		if($locale.length) {
 			$locale.children().empty();
-			$.tmpl(templateID, data).appendTo($locale);
+			$.tmpl(templateID, getData()).appendTo($locale);
 			$locale.children('h2').click( function() {
 				$locale.children('ul').toggle();
 			});
 		}
 	}
 
+	function getData() {
+		return {
+			'language_settings_label': nouns.root.language_setting_pl,
+			'browser_language' : locale.getBrowserLanguage(),
+			'available_languages' : locale.getAvailableLanguages()
+		};
+	}
+
 	function setup() {
 		$.template(templateID, defaultTemplateMarkup);
 	}
 
-	/* --- module object --- */
-	var localeUI = {
-		/* --- public functions and variables--- */
-		'onReady': function () {
-			setup();
-			render();
-		}
+	function onReady() {
+		setup();
+		render();
 	};
 
-	setTimeout(localeUI.onReady, 100);
+	var module = {
+		// no public methods for now		
+	};
 
-	return localeUI;
+	setTimeout(onReady, 20);
+
+	return module;
 });
