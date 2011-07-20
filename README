@@ -62,6 +62,8 @@ Das Event Plugin leitet alle möglichen Arten von äusseren Events in das PubSub
 TODO: 99 Cache Manifest zufügen
 ...
 
+7. Locale und LocaleUI
+
 
 DEVENVIRONMENT
 ti, git, github, aptana, chrome, firefox, ticgitweb
