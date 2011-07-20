@@ -65,6 +65,8 @@ TODO: 99 Cache Manifest zufügen
 7. Locale und LocaleUI
 Locale ist ein Objekt, dass die Sprache und Region des Benutzers verwaltet. Seinem Aufbau nach wird es als RequireJS Modul geladen.
 
+Auswahl der Sprache:
+
 DEVENVIRONMENT
 ti, git, github, aptana, chrome, firefox, ticgitweb
 
