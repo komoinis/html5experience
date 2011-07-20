@@ -1,15 +1,8 @@
-define(["jquery", "locale/locale", "require/i18n!std_dict/nls/nouns", "require/text!locale/locale_template.html", "jq/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns, templateMarkup) {
+define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "text!locale/locale_template.html", "jq/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns, templateMarkup) {
 	/* --- private variables --- */
 	var templateID = "locale_template";
 
 	var nouns = initialNouns;
-
-	var defaultTemplateMarkup = '<h2>${language_settings_label}</h2>'
-	+'<ul><li class="language">${browser_language}</li>'
-	+'{{each(i, language) available_languages}}'
-	+ '<li>${language}</li>'
-	+'{{/each}}'
-	+ '</ul>';
 
 	function render() {
 		var $locale = $("#locale");
@@ -31,7 +24,7 @@ define(["jquery", "locale/locale", "require/i18n!std_dict/nls/nouns", "require/t
 	}
 
 	function setup() {
-		$.template(templateID, defaultTemplateMarkup);
+		$.template(templateID, templateMarkup);
 	}
 
 	function onReady() {
