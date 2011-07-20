@@ -1,4 +1,4 @@
-define(["jquery", "i18n!std_dict/nls/nouns"], function($, nouns) {
+define(["jquery", "require/i18n!std_dict/nls/nouns"], function($, nouns) {
 
 	var isBrowser = true; // TODO: setze sinnvolle Vorbedingungen bzw lade aus datei/script und überschreibe defaults
 

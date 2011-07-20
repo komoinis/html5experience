@@ -1,4 +1,4 @@
-define(["jquery", "i18n!std_dict/nls/nouns"], function($) {
+define(["jquery", "require/i18n!std_dict/nls/nouns"], function($) {
 
 	/* --- private variables --- */
 	var masters = ["std_dict/nls/nouns"]; // TODO: use from app

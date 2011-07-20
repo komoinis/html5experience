@@ -1,9 +1,8 @@
-define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns) {
-
+define(["jquery", "locale/locale", "require/i18n!std_dict/nls/nouns", "require/text!locale/locale_template.html", "jq/jquery.tmpl", "jquery-ui/jquery-ui.custom.min"], function($, locale, initialNouns, templateMarkup) {
 	/* --- private variables --- */
-	var nouns = initialNouns;
-
 	var templateID = "locale_template";
+
+	var nouns = initialNouns;
 
 	var defaultTemplateMarkup = '<h2>${language_settings_label}</h2>'
 	+'<ul><li class="language">${browser_language}</li>'
@@ -41,7 +40,7 @@ define(["jquery", "locale/locale", "i18n!std_dict/nls/nouns", "jq/jquery.tmpl", 
 	};
 
 	var module = {
-		// no public methods for now		
+		// no public methods for now
 	};
 
 	setTimeout(onReady, 20);
