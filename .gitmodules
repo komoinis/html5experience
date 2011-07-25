@@ -1,3 +1,3 @@
 [submodule "h5e/scripts/globalize"]
 	path = h5e/scripts/globalize
-	url = https://github.com/jquery/globalize.git
+	url = git@github.com:komoinis/globalize.git
