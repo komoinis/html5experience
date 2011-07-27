@@ -1,7 +1,11 @@
-<h2>${language_settings_label}</h2>
+<h2>${nouns.language_setting_pl}</h2>
 <ul>
-	<li class="language">${browser_language}</li>
-	{{each(i, language) available_languages}}
-	<li>${language}</li>
+	<li  class="language">
+		<a href="#lang=${locale.environment.language}&use=environment" type="alternate" hreflang="${locale.environment.language}">${locale.environment.language}</a>
+	</li>
+	{{each(i, language) locale.application.languages}}
+	<li>
+		<a href="#lang=${language}&use=user" type="alternate" hreflang="${language}">${language}</a>
+	</li>
 	{{/each}}
 </ul>

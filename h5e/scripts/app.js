@@ -1,9 +1,9 @@
-define(["jquery", "i18n!std_dict/nls/nouns"], function($, nouns) {
+define(['jquery', 'i18n!std_dict/nls/nouns'], function($, nouns) {
 
 	var isBrowser = true // TODO: setze sinnvolle Vorbedingungen bzw lade aus datei/script und überschreibe defaults
 
 	function onReady() {
-		// TODO log or alert("app on ready");
+		// TODO log or alert('app on ready');
 	}
 
 	var app = {
@@ -15,4 +15,4 @@ define(["jquery", "i18n!std_dict/nls/nouns"], function($, nouns) {
 	})
 	
 	return app
-})
+});

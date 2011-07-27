@@ -4,5 +4,7 @@
 * */
 define({
     "root": true,
-    "de": true
+    "de": true,
+    "de-DE" : true,
+    "de-CH" : true,
 });

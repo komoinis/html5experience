@@ -110,7 +110,8 @@
                 locale = config.locale || (config.locale =
                         typeof navigator === "undefined" ? "root" :
                         (navigator.language ||
-                         navigator.userLanguage || "root").toLowerCase());
+                         navigator.userLanguage || "root")); //.toLowerCase());
+                console.log("@ language " +  locale);
                 parts = locale.split("-");
             }
 
